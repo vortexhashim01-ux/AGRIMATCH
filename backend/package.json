@@ -1,0 +1,54 @@
+{
+  "name": "agrimatch-backend",
+  "version": "1.0.0",
+  "description": "AgriMatch Backend API - Farmer-Buyer Agri-Marketplace Platform",
+  "main": "dist/server.js",
+  "scripts": {
+    "start": "node dist/server.js",
+    "dev": "nodemon src/server.ts",
+    "build": "tsc",
+    "test": "node --test --test-concurrency=1 --require ts-node/register ./tests/*.test.ts"
+  },
+  "keywords": [
+    "agrimatch",
+    "agriculture",
+    "marketplace",
+    "farmer",
+    "buyer"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "@sentry/node": "^10.75.1",
+    "bcryptjs": "^3.0.3",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "dotenv": "^16.6.1",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.7.0",
+    "helmet": "^8.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.10.2",
+    "morgan": "^1.10.0",
+    "multer": "^2.4.0",
+    "node-cron": "^4.6.0",
+    "socket.io": "^4.8.3",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/cookie-parser": "^1.4.10",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/jsonwebtoken": "^9.0.6",
+    "@types/morgan": "^1.9.9",
+    "@types/multer": "^2.3.0",
+    "@types/node": "^20.14.10",
+    "@types/node-cron": "^3.0.11",
+    "mongodb-memory-server": "^11.3.0",
+    "nodemon": "^3.1.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.3"
+  }
+}
